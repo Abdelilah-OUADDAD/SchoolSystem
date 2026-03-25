@@ -72,11 +72,11 @@ public class UserController {
 
         session.setMaxInactiveInterval(30 * 60); // 30 minutes
 
-        return "redirect:/Dashboard";
+        return "redirect:/index";
     }
 
     // -------Dashboard -----------------
-    @GetMapping("/Dashboard")
+    @GetMapping("/index")
     public String dashboard(Model model) {
 
         model.addAttribute("userCount", userRepo.count());
@@ -84,7 +84,7 @@ public class UserController {
         model.addAttribute("teacherCount", teacherRepo.count());
         model.addAttribute("pedagogieCount", pedagogieRepo.count());
 
-        return "Dashboard";
+        return "docs/index";
     }
 
     @GetMapping("/UserList")
