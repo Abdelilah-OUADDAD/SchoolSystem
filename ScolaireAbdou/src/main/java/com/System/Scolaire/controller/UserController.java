@@ -72,7 +72,7 @@ public class UserController {
 
         session.setMaxInactiveInterval(30 * 60); // 30 minutes
 
-        return "redirect:/UserList";
+        return "redirect:/Dashboard";
     }
 
     // -------Dashboard -----------------
