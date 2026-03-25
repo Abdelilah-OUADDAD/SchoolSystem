@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: school-system
+    runtime: java
+    buildCommand: mvn clean package
+    startCommand: java -jar target/*.jar
