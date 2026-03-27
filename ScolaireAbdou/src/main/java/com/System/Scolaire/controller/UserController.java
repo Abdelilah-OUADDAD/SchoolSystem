@@ -84,7 +84,7 @@ public class UserController {
         model.addAttribute("teacherCount", teacherRepo.count());
         model.addAttribute("pedagogieCount", pedagogieRepo.count());
 
-        return "docs/index";
+        return "index";
     }
 
     @GetMapping("/UserList")
